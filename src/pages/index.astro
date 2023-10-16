@@ -4,8 +4,11 @@ import Compatibility from "~/components/compatibility.astro";
 import Features from "~/components/features.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
+import Header1 from "~/components/header1.astro";
 import Intro from "~/components/intro.astro";
 import Showcase from "~/components/showcase.astro";
+import Portfolio from "~/components/portfolio.astro";
+import Splash1 from "~/components/splash1.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
@@ -61,13 +64,14 @@ const description =
   <body
     class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
   >
-    <Header />
-    <Splash />
+    <Header1 />
+    <!-- <Splash /> -->
+    <Splash1 />
     <div class="space-y-24 px-8 py-32">
       <Intro />
       <Features />
-      <Compatibility />
-      <Showcase />
+      <!-- <Compatibility /> -->
+      <Portfolio />
     </div>
     <Footer />
   </body>
