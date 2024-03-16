@@ -1,0 +1,22 @@
+---
+import Header from "../components/header.astro";
+import Intro from "../components/intro.astro";
+
+import { Image } from "astro:assets";
+import room from "~/assets/contact1.png";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
+---
+
+<Header />
+
+<Image
+  class="h-full w-full object-cover"
+  src={room}
+  widths={widths}
+  sizes={sizes}
+  alt="Meet the creator"
+/>
+
+<Intro />

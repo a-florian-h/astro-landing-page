@@ -1,0 +1,60 @@
+/* .fixed-khHeader {
+  @apply fixed top-0 top-auto;
+  @apply border-default bg-default text-default;
+  @apply z-10;
+} */
+.splash {
+  @apply relative; /* Position it relative */
+  @apply z-0; /* Set a lower z-index */
+}
+
+.header-text {
+  font-family: "Inter", sans-serif;
+  /* text-transform: uppercase; */
+  font-size: 20px; /* default font size for mobile */
+  color: #51301e;
+  padding-left: 42px;
+  letter-spacing: 1.5px;
+  margin-top: -13px;
+}
+
+/* Larger font size for tablets and small desktops */
+@media (min-width: 768px) {
+  .header-text {
+    font-size: 20px;
+  }
+}
+
+/* Even larger font size for large desktops */
+@media (min-width: 1024px) {
+  .header-text {
+    font-size: 30px;
+  }
+}
+.header-items {
+  font-family: "Inter", sans-serif;
+  /* text-transform: uppercase; */
+  font-size: 15px; /* default font size for mobile */
+  color: #51301e;
+  padding-left: 42px;
+  letter-spacing: 1.5px;
+  margin-top: -13px;
+}
+
+/* Larger font size for tablets and small desktops */
+@media (min-width: 768px) {
+  .header-items {
+    font-size: 20px;
+  }
+}
+
+/* Even larger font size for large desktops */
+@media (min-width: 1024px) {
+  .header-items {
+    font-size: 20px;
+  }
+}
+
+.color-main {
+  color: #51301e;
+}

@@ -1,40 +1,33 @@
 ---
 import { Icon } from "astro-icon";
-import HeroImage from "~/components/hero-image.astro";
-import HeroImage1 from "~/components/hero-image1.astro";
+import HeroImage from "~/components/hero-image-old.astro";
+import HeroImage1 from "~/components/hero-image.astro";
 import type { FooterLink } from "~/types";
 import type { NavItem } from "~/types";
 
 const links: Array<FooterLink> = [
   {
-    url: "#intro",
-    description: "Kristy Harvey Creative Studio - Home",
-    icon: "mdi:home",
-  },
-  {
-    url: "https://github.com/mhyfritz/astro-landing-page",
-    description: "View source on GitHub",
+    url: "#",
+    description: "KHCS on instagram",
     icon: "fa-brands:instagram",
   },
 
   {
-    url: "https://twitter.com/",
-    description: "KHCS on Twitter",
-    icon: "fa-brands:twitter",
+    url: "#",
+    description: "KHCS on facebook",
+    icon: "fa-brands:facebook",
   },
 ];
 ---
 
-<footer class="relative flex h-64 items-center justify-center">
-  <div class="absolute inset-0 overflow-hidden opacity-40">
-    <HeroImage1 />
-  </div>
-  <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
+<!-- <footer class="footer relative flex h-64 items-center justify-center"> -->
+<footer class="footer">
+  <ul class="relative grid grid-cols-2 gap-4">
     {
       links.map((link) => (
         <li>
           <a
-            class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-current p-4"
+            class="color-main flex h-16 w-16 items-center justify-center rounded-full border-2 border-current p-4"
             href={link.url}
           >
             <span class="sr-only">{link.description}</span>
@@ -45,3 +38,10 @@ const links: Array<FooterLink> = [
     }
   </ul>
 </footer>
+
+<style>
+  .footer {
+    @apply absolute bottom-10 right-0 flex items-center justify-center;
+    @apply z-50; /* Increase z-index */
+  }
+</style>
